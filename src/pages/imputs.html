@@ -76,13 +76,13 @@
                     <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
                     <span class="nav_name">Navegação</span>
                   </a>
+            
       
                   <a href="./notifications.html" class="nav_link">
                     <i class='bx bx-error nav_icon'></i>
                     <span class="nav_name">Notificações</span>
                   </a>
-                  
-                  
+                 
               </div>
             </div>
         </nav>
@@ -90,9 +90,61 @@
 
     <!--Container Main start-->
     <div class="height-100 bg-light">
-      <h4>Botões</h4>
+      <h4>Entradas</h4>
 
-        <button class="button">Tweet</button>
+      
+        <br>
+        <p style="text-align: justify;">
+         <b>Entrada de texto e password</b> 
+        </p>
+        <form>
+          User name:<br>
+          <input type="text" name="username"><br>
+          User password:<br>
+          <input type="password" name="psw">
+        </form>
+
+        <br>
+        <p style="text-align: justify;">
+          <b>Entrada de submit</b>
+        </p>
+        <form action="imputs.html" >
+         
+          O que está acontecendo?:<br>
+          <input type="text" name="O que está acontecendo?" value="Fazendo trabalho IHC"><br><br>
+          
+          <input class="btn btn-primary" type="submit" value="Tweetar" >
+        </form>
+ 
+      <br>
+        <p style="text-align: justify;">
+          <b>Entrada de seleção</b>
+        </p>
+        
+        <div >
+          <select name="Day">
+            <option selected>Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        
+        <br>
+        <p style="text-align: justify;">
+          <b>Entrada de arquivo para Compartilhamento</b>
+        </p>
+        <div class="input-group mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile02">
+            <label class="custom-file-label" for="inputGroupFile02"></label>
+          </div>
+        
+        </div>
+        
+
+
+        
 
     </div>
     <!--Container Main end-->
