@@ -233,27 +233,85 @@
     margin-left: 1rem;
   }
   
+  /*              Botões            */
   .button {
-    background: #1D9BF0;
-    min-width: 11rem;
-    padding: .9rem;
+    background: rgb(29, 155, 240);;
+    min-width: 52px;
+    min-height: 52px;
+    padding: 0 32px 0 32px;
     border: none;
-    border-radius: 2rem;
+    border-radius: 99999px;
     color: white;
     font-weight: bold;
     cursor: pointer;
+    outline-style: none;
+    outline: 0;
+
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
   }
-  
+
+  .button:disabled{
+    opacity: 0.6;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  .button.big{
+    background: rgb(29, 155, 240);;
+    min-width: 52px;
+    min-height: 52px;
+    padding: 0 50px 0 50px;
+    border: none;
+    border-radius: 99999px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline-style: none;
+    outline: 0;
+
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+  }
+
+  .button.follow{
+    background-color: rgb(15, 20, 25);
+    min-height: 32px;
+    min-height: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    border-radius: 99999px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline-style: none;
+    outline: 0;
+
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+  }
+
+  .button.follow:hover {
+    background-color: rgb(39,44,48);
+  }
+
   .button:hover {
-    background: #1A8CD8;
+    background: rgb(26, 140, 216);;
     border-color: #1A8CD8;
   }
+  
+  .button:focus {
+     outline:0
+  }
+
+  .desc {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
   
   .input-group{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    
    
   }
   
@@ -275,5 +333,20 @@
     width: 16rem;
   
   }
+
+  pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid rgb(26, 140, 216);
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    width: 40rem;
+    overflow: auto;
+    display: flex;
+    word-wrap: break-word;
+}
   
   /* Estilização dos forms(fim)- Teste*/
