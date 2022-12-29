@@ -12,6 +12,7 @@
 </head>
 
 <body className='snippet-body'>
+  
 
   <body id="body-pd">
     <header class="header" id="header">
@@ -19,6 +20,7 @@
     </header>
 
     <div class="l-navbar" id="nav-bar">
+      
         <nav class="nav">
             <div> 
                 <a href="#" class="nav_logo"> 
@@ -89,7 +91,73 @@
 
     <!--Container Main start-->
     <div class="height-100 bg-light">
-      <h4>Notificações</h4>
+
+
+      <div class="p-3">
+        <h4 class="pt-2">Notificações</h4>
+        <p>
+          As notificações servem para avisar algo ao usuário, mais comumente usada quando algo deu errado, abaixo você pode conferir algum dos exemplos de notificações já retornadas pelo twitter atualmente, pode-se se resumir como uma caixa azul com uma mensagem dentro, a caixa se expande ou diminui de acordo com o tamanho da mensagem. 
+        </p>
+      </div>
+          
+          <div class="d-flex  align-items-center justify-content-center gap-5">
+            
+             <div class="d-flex flex-column gap-3" >
+  
+              <div class="d-flex flex-column gap-3 align-items-center justify-content-center me-5" >
+  
+                <div class="d-flex flex-column align-items-center gap-3">
+               
+                  <span>Exemplos de mensagens de erro:</span>
+                  <div class="notification-ex">
+                    <span>Senha incorreta.</span>
+                  </div>
+                  <div class="notification-ex">
+                    <span>Desculpe, mas não encontraomos sua conta.</span>
+                  </div>
+
+                  <div class="d-flex flex-column align-items-center justify-content-center mt-5">
+                    <span>Clique no botão para ver um exemplo de notificação:</span>
+                    <button class="magic" onclick="clicka()">Mágica</button>
+                  </div>
+
+                  
+                  <div class="notification">
+                    <span>Desculpe, mas não encontraomos sua conta.</span>
+                  </div>
+                  
+
+                </div>
+                
+                
+              </div>
+              
+              </div>
+              
+              <h5 class="m-3">Código:</h5>
+              <pre>
+                .notification {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  min-height: 45px;
+                  min-width: 150px;
+                  padding: 5px 25px;
+                  background-color:rgb(29, 155, 240);
+                  border-radius: 5px;
+                
+               }
+               .notification span {
+                 color: white;
+                 font-weight: 100;
+               }
+                
+              </pre>
+            </div>
+            
+          </div>
+            
+      </div>
 
     </div>
     <!--Container Main end-->
@@ -143,5 +211,22 @@
       });</script>
 
   </body>
+
+<script>
+  
+
+function clicka() {
+  const toast = document.querySelector(".notification")
+  console.log(toast)
+  toast.className = "notification show"
+  setTimeout(() => {
+      toast.classList.remove("show");
+    
+    }, 3000);
+  
+}
+  
+</script>
+
 
 </html>
