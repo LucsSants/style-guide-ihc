@@ -89,10 +89,74 @@
     </div>
 
     <!--Container Main start-->
-    <div class="height-100 bg-light">
-      <h4>Botões</h4>
+    <div class="height-100 bg-light ">
+      
+      
+  <div class="p-3">
+      <h4 class="pt-2">Botões</h4>
+      <p>
+        Os botões possui um padrão definido e os demais são apenas uma variação de tamanho e de cor e de conteúdo, o botão se expande de acordo com o tamanho do conteúdo, abaixo é possível observar o botão padrão e algumas de suas variações. Jutamente com o código da versão padrão.
+      </p>
+    </div>
+        
+        <div class="d-flex  align-items-center justify-content-center gap-5">
+          
+           <div class="d-flex flex-column gap-3" >
 
-        <button class="button">Tweet</button>
+            <div class="d-flex flex-column gap-3 align-items-center justify-content-center me-5" >
+
+              <div class="d-flex flex-column align-items-center">
+              <span class="desc">Botão Tweetar padrão:</span>
+              <button class="button" onclick="imAButton()">Tweetar</button>   
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <span class="desc">Botão Tweetar grande:</span>
+                <button class="button big " onclick="imAButton()">Tweetar</button>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <span class="desc">Botão Seguir:</span>
+                <button class="button follow  " onclick="imAButton()">Seguir</button>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <span class="desc">Botão Tweetar desabilitado:</span>
+                <button class="button " disabled > Tweetar</button>
+              </div>
+              
+            </div>
+            
+            </div>
+            
+            <h5 class="m-3">Código:</h5>
+            <pre>
+              
+              .button {
+                background: rgb(29, 155, 240);;
+                min-width: 52px;
+                min-height: 52px;
+                padding: 0 32px 0 32px;
+                border: none;
+                border-radius: 99999px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+              }
+              .button:hover {
+                background: rgb(26, 140, 216);;
+                border-color: #1A8CD8;
+              }
+              .button:disabled{
+                opacity: 0.6;
+                cursor: auto;
+                pointer-events: none;
+              }
+              
+            </pre>
+          </div>
+          
+        </div>
+          
+        
 
     </div>
     <!--Container Main end-->
@@ -146,5 +210,13 @@
       });</script>
 
   </body>
+
+  <script>
+
+    function imAButton() {
+      alert("Eu sou um botão de verdade!")
+    }
+
+  </script>
 
 </html>

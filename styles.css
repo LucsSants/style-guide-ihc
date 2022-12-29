@@ -38,20 +38,6 @@
   margin-top: .8rem;
 }
 
-.button {
-  background: #1D9BF0;
-  min-width: 11rem;
-  padding: .9rem;
-  border: none;
-  border-radius: 2rem;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.button:hover {
-  background: #1A8CD8;
-}
 
 /* Estilização dos forms(inicio)- Teste*/
 .forms{
