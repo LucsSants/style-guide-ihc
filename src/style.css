@@ -403,13 +403,13 @@
 }
   
    /* Estilização dos forms- Teste*/
-   .forms{
+   .forms {
+    display: flex;
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
+  
    }
-
- 
 
   
   .input-group{
@@ -425,7 +425,6 @@
 
   }
   
-  
      .inputField {
     height: 55px;
     border-radius: 4px;
@@ -440,16 +439,19 @@
 
 .date-form label{
     
-    position: fixed;
+    position: absolute;
     padding: 10px 10px 0;
-    padding-top: 11rem;
-    padding-left: 25px; 
+    padding-top: 17rem;
+    padding-left:1rem;
+    padding-bottom: 15.5rem; 
     font-size: 13px;
-    color: #5a5a5f;  
+    color: #5a5a5f; 
+     
   }
   .date-form{
     padding: 10px 13px 0;
     position: relative;
+   
   }
   select{
    border-radius: 4px;
@@ -459,8 +461,16 @@
    font-size: 16px;
    background: white;
    border:2px solid #5a5a5f;
+   padding-top: 20px;
+   padding-left: 10px;
+   background: url("images/seta-1.svg");
+   background-repeat: no-repeat;
+   background-position:right;
+   -webkit-appearance: none;
    
   }
+
+
   select:focus,
   select:valid{
     border: 2px solid rgb(29, 161, 242);
@@ -492,6 +502,17 @@
     color: #5a5a5f;
   }
 
- 
+  .code{
+    display: flex;
+    position: absolute;
+    margin-left: 30%;
+    height: 10rem;
+    width:60rem ;
+    margin-top: -10rem ;
+    overflow-y: scroll;
+    
+  }
+  
+  /* Estilização forms (fim)*/
   
 
