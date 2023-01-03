@@ -597,6 +597,7 @@ margin:30px;
   bottom: -1rem;
   font-size:  20px;
   box-sizing: border-box;
+  color: #0f1419;
 }
 .bird_button{
   background-color:#f8f9fb;
@@ -631,4 +632,7 @@ box-sizing: border-box;
     top:10rem;
     bottom: auto;
 }
-
+.nav-dsc{
+  color: #5a5a5f;
+  
+}
