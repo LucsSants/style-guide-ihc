@@ -90,18 +90,72 @@
 
     <!--Container Main start-->
     <div class="height-100 bg-light">
-      <h4>Navegação</h4>
-        <div class="p-3">
-          <p>
-            A navegação é constituida por um padrão e conjunto de ícones,botões, cores que compõe o lado esquerdo da tela
-          </p>
-        </div>
-        <div class="nav">
-        <a href="#">setS</a>
-        <img class="bird" href="../images/bird_test-1.png">
-
+      <div class="nav-container">
+        <h4>Navegação</h4>
+          <div class="p-3">
+            <p>
+            A navegação é constituida por um padrão e conjunto de ícones,botões e cores que compõe o lado esquerdo da tela como é visto no exemplo abaixo:
+            </p>
+          </div>
+     
+        <div class="button_group">
+          <h6>Botão mais fraco do Twitter</h6>
+          <button class="bird_button" >
+            <img class ="icon-nav"src="../images/bird_icon-1.svg" ></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/house-icon.svg"><span class="span-nav">Página Inicial</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/explore-icon.svg"><span class="span-nav">Explorar</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/notify-icon.svg"><span class="span-nav">Notificações</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/message-icon.svg"><span class="span-nav">Mensagens</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/save-icon.svg"><span class="span-nav">Itens Salvos</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/list-icon.svg"><span class="span-nav">Listas</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/perfil-icon.svg"><span class="span-nav">Perfil</span></button>
+            <h6>Botão mais fraco do Twitter</h6>
+          <button class="button_nav"> 
+            <img class ="icon-nav" src="../images/more-icon.svg"><span class="span-nav">Mais</span></button>
+          
         </div>
         
+      </div>
+    
+      <pre class="nav-code">
+        <h5 class="nav-h5">Código de Estilização:</h5>
+        .button {
+          background: rgb(29, 155, 240);;
+          min-width: 52px;
+          min-height: 52px;
+          padding: 0 32px 0 32px;
+          border: none;
+          border-radius: 99999px;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+        }
+        .button:hover {
+          background: rgb(26, 140, 216);;
+          border-color: #1A8CD8;
+        }
+        .button:disabled{
+          opacity: 0.6;
+          cursor: auto;
+          pointer-events: none;
+        }
+        
+      </pre>
     </div>
     <!--Container Main end-->
 

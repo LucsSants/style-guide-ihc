@@ -563,11 +563,72 @@ font-size: 16px;
   
 /*Nav -ini */
 
-.class{
+.nav-container{
+position: relative;
+padding: 1rem;
+margin:30px;
 
 }
 
-.bird{
+
+.button_group{
+  display: flex;
+  flex-direction: column;
+  padding-top:auto;
+  margin: 10px;
+  
+  
+}
+
+.button_nav{
+ display: flex;
+ background-color:#f8f9fb;
+ border: none;
+ border-radius: 99999px;
+ margin:15px; 
+ width: 12rem;
+ height:3.5rem;
+}
+.span-nav{
+  display: block;
+  position: relative;
+  left: 20px;
+  top: 11px;
+  bottom: -1rem;
+  font-size:  20px;
+  box-sizing: border-box;
+}
+.bird_button{
+  background-color:#f8f9fb;
+  border-radius: 99999px;
+  border-color:#f8f9fb ;
+  width: 4rem;
+  height:4rem;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  border: 0px;
+
+}
+.button_nav:hover,.bird_button:hover {
+  background-color:#e9f3fd;
+ }
+
+.icon-nav{
+position: relative;
 height: 50px;
-width: 30px;
+width: 35px;
+left: 10px;
+box-sizing: border-box;
 }
+
+.nav-code{
+  display: flex;
+    position: absolute;
+    margin-left: 40%;
+    height: 40rem;
+    width:40rem ;
+    top:10rem;
+    bottom: auto;
+}
+
