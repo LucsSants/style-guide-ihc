@@ -95,9 +95,10 @@
         <p>Os formulários possuem um padrão bem definido de cores, estilos e tamanhos, que podem  variar em casos específicos. 
           Dentre os principais formulários utilizados, são vistos os seguintes exemplos:
         </p>
-        <h5>Form padrão de login:</h5>
+        <h5>Formulário Vazio:</h5>
+        <h6 class="Form-dsc">Label text: #5a5a5f, Roboto regular/16px . <br> Regular text: #515559, Roboto regular/16px </h6>
       
-      <form action="#" >
+      <form action="#" class="forms">
         <div class="input-group">
          
             <input 
@@ -109,26 +110,194 @@
               class="inputField"/>
             <label for="username">Celular, e-mail ou nome de usuário</label>
           </div>
+          <h5>Formulário Preenchido:</h5>
+          <h6 class="Form-dsc">Label text: #00ACEE, Roboto regular/13px<br> Regular text: #515559, Roboto regular/16px</h6>
             <div class="input-group">
               <input 
-              title="Senha"
-                type="password"
+              title="Preenchido"
+                type="text"
                 id="password"
-                name="password"
+                name="Preenchido"
                 required
-                class="inputField"/>
-              <label for="password">Senha</label>
-            </div>    
+                class="inputField2"
+                placeholder="Exemplo"/>
+              <label class="fullyform" for="preenchido">Celular, e-mail ou nome de usuário</label>
+            </div>   
+            <h5>Formulário Inválido:</h5>
+            <h6 class="Form-dsc">Label text: #f4212e, Roboto regular/13px</h6> 
+            <input 
+              title="Invalido"
+                type="text"
+                id="Invalido"
+                name="Preenchido"
+                required
+                class="inputField3"
+               />
+              <label class="Invalido" for="Invalido">Celular</label>
         </div>
         <div class="code">
-          <h5>Código: </h5>
+          <h5>Código de estilização: </h5>
           <pre class="precode">
-            sdadsa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam esse, mollitia nostrum impedit ut nulla asperiores nobis itaque sapiente culpa reiciendis, unde, hic vel delectus laborum. Eos, nulla ullam. Sit?
+            .forms {
+              margin: auto;
+             }
+            
+            .input-group{
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 1.1rem;
+            }
+            
+            .input-group{
+              position: relative;
+              margin-top:20px;
+              margin-bottom: 20px;
+            }
+            
+               .inputField {
+              height: 55px;
+              border-radius: 4px;
+              border: 2px solid #5a5a5f;
+              padding: 10px 10px 0;
+              width: 17rem;
+              box-shadow: none;
+              outline: none;
+              font-size: 16px;
+            }
+          
+            .inputField2{
+              height: 55px;
+              border-radius: 4px;
+              border: 2px solid #00ACEE;
+              padding: 10px 10px 0;
+              width: 17rem;
+              box-shadow: none;
+              outline: none;
+              font-size: 16px; 
+            }
+          
+            .inputField3{
+              height: 55px;
+              border-radius: 4px;
+              border: 2px solid #f4212e;
+              padding: 10px 10px 0;
+              width: 17rem;
+              box-shadow: none;
+              outline: none;
+              font-size: 16px;
+            }
+          
+          ::placeholder{
+          color: black;
+          font-size: 16px;
+          }
+            
+          .date-form label{
+              
+              position: auto;
+              padding-top: 29rem;
+              padding-left:1rem;
+              top: auto;
+              bottom: auto;
+              padding-bottom: 15.5rem; 
+              font-size: 14px;
+              color:  #515559; 
+            }
+          
+            .date-form{
+              padding: 15px 13px 0;
+              position: relative;
+              flex-direction: column;
+              display: flex;
+            }
+          
+            
+            select{
+             border-radius: 4px;
+             position:relative;
+             width: 17rem;
+             height: 55px;
+             font-size: 16px;
+             background: white;
+             border:2px solid #5a5a5f;
+             padding-top: 20px;
+             padding-left: 10px;
+             background: url("images/seta-1.svg");
+             background-repeat: no-repeat;
+             background-position:right;
+             -webkit-appearance: none;
+             margin-top: 1rem;
+            }
+          
+            select:focus {
+              border: 2px solid rgb(29, 161, 242);
+            }
+          
+          
+            select:focus + label
+            {
+              color: rgb(29, 161, 242);
+            }
+          
+            .inputField:focus, 
+            .inputField:valid {
+              border: 2px solid rgb(29, 161, 242);
+            }
+          
+            .inputField:focus + label,
+            .inputField:valid + label {
+              transform: translate(0, -140%);
+              font-size: 13px;
+              color: rgb(29, 161, 242) ;
+            }
+            
+             label {
+              position: absolute;
+              top:  50%;
+              left: 10px;
+              transform: translate(0, -50%);
+              transition: all 0.3s;
+              color: #5a5a5f;
+              font-size: 16px;
+            }
+          
+            .fullyform {
+              position: relative;
+              font-size: 12px;
+              top:auto;
+              bottom: 45px;
+              color:#00ACEE;
+              
+            }
+          
+            .code{
+              display: flex;
+              position: absolute;
+              margin-left: 40%;
+              height: 40rem;
+              width:auto ;
+              top:10rem;
+              bottom: auto;
+            }
+          
+            .Form-dsc{
+              color:#5a5a5f;
+            }
+          
+            .Invalido{
+              display: flex;
+              font-size: 13px;
+              top:auto;
+              bottom: 45px;
+              position: relative;
+              color:#f4212e;
+            }  
           </pre>
         </div>
         
         <div class="date-form">
-          <h5>Form padrão de seleção:</h5>
+          <h5>Formulário de Data Vazio & Preenchido:</h5>
+          <h6 class="Form-dsc">Label text: #5a5a5f e #00ACEE, Roboto regular/13px<br>Regular text: #515559, Roboto Regular/16px </h6>
           <select name="mes" id="mes">
             <option></option>
             <option>Janeiro</option>
@@ -144,8 +313,8 @@
             <option>Novembro</option>
             <option>Dezembro</option>
           </select>
-          <label class="mes" for="mes">Mês</label>
-        </div>
+          
+          <label class="mes" for="mes">Mês</label>   
       </form>
        
     </div>
